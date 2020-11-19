@@ -1,0 +1,28 @@
+#mtgImage {
+    height: 450px;
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 5px;
+}
+
+body {
+    background-color: #242331;
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+.container {
+    margin-top: 50;
+    margin-bottom: 50;
+}
+.box {
+    width: 100%;
+}
+
+
+
+button {
+    font-family: 'Sorts Mill Goudy', serif;
+}
+
+

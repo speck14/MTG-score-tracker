@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic: the Gathering Life Counter</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="mtgCSS.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class = "section">
+        <div class = "container">
+            <div class = "columns">
+                <div class = "column">    
+                    <div class="card">
+                        <figure class="has-background-white-ter">
+                            <img id="mtgImage" src="mtgImage.jpg">
+                          </figure>
+                        <header class="card-header has-background-white-ter">
+                            <p class="card-header-title">
+                                Magic: The Gathering Life Counter
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <div class="content has-background-white-ter">
+                                <h1 class="is-size-1 has-text-centered"><span class = "box">Player One: <span id= "p1Display">20</span></span> <span class ="box">Player Two: <span id = "p2Display">20</span></span></h1>
+                            </div>
+                            <div class="content">
+                                <label for ="" class = "label is-inline has-text-weight-light has-text-primary-dark">Beginning Life</label>
+                                <div class= "select is-rounded is-small is-focused">
+                                    <select name = "" id = "playTo">
+                                        <option value = "20">20</option>
+                                        <option value = "40">40</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer has-background-white-ter">
+                            <div class="box has-text-left has-background-white-ter">
+                                <button class= "button is-large is-link is-outlined"id="p1Increase">+1 Player One</button>
+                                <button class = "button is-warning is-light is-outlined" id = "p1Decrease">-1 Player One</button>
+                            </div>
+                            <div class="box has-text-centered has-background-white-ter">
+                                <button class = "button is-large is-danger is-outlined" id = "reset">Reset</button>
+                            </div>
+                            <div class="box has-text-right has-background-white-ter">
+                                <button class = "button is-large is-link is-outlined" id = "p2Increase">+1 Player Two</button>
+                                <button class = "button is-warning is-light is-outlined" id = "p2Decrease">-1 Player Two</button>
+                            </div>
+                            
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
