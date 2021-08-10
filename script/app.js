@@ -22,7 +22,9 @@ startingLife.addEventListener("change", function(){
     p1Score = parseInt(this.value);
     p2Score = parseInt(this.value);
     p1Display.textContent = p1Score;
+    p1.score= p1Score;
     p2Display.textContent = p2Score;
+    p2.score=p2Score;
 })
 
 function increaseScore (player) {
